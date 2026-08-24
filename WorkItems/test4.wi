@@ -7,12 +7,12 @@
   "notes": [
     {
       "content": "[ACTIVE] Outage officially declared.",
-      "created_at": "2026-08-25T02:30:37.451493",
+      "created_at": "2026-08-25T02:30:51.012965",
       "metadata": {}
     },
     {
       "content": "[MITIGATED] [System] Outage mitigated.",
-      "created_at": "2026-08-25T02:31:04.966288",
+      "created_at": "2026-08-25T02:31:15.667898",
       "metadata": {}
     }
   ]
