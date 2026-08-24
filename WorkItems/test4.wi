@@ -1,0 +1,19 @@
+{
+  "title": "test4",
+  "item_type": "Incident",
+  "body": "",
+  "state": "open",
+  "type_metadata": {},
+  "notes": [
+    {
+      "content": "[ACTIVE] Outage officially declared.",
+      "created_at": "2026-08-25T02:30:37.451493",
+      "metadata": {}
+    },
+    {
+      "content": "[MITIGATED] [System] Outage mitigated.",
+      "created_at": "2026-08-25T02:31:04.966288",
+      "metadata": {}
+    }
+  ]
+}
