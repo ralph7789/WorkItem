@@ -155,7 +155,7 @@ class E2ETestRunner(QObject):
     def test_recycle_bin(self):
         self.window.recycle_toggle.setChecked(True)
         # Should now be in recycle mode
-        if not self.window.is_recycle_mode:
+        if not self.window.recycle_toggle.isChecked():
             raise ValueError("Failed to enter Recycle Bin mode")
         self.window.recycle_toggle.setChecked(False)
         return "PASS"
