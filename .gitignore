@@ -1,0 +1,12 @@
+venv/
+dist/
+build/
+__pycache__/
+*.pyc
+*.db
+*.log
+.vscode/
+.idea/
+WorkItems.spec
+e2e_report.json
+e2e_report.html
