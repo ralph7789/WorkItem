@@ -46,11 +46,21 @@ If you just want to run the app without touching code, simply download the pre-c
 
 ## ⚙️ Configuration & GitHub Access
 
-To sync WorkItems with GitHub, the app requires a **GitHub Personal Access Token (PAT)** with `repo` (Read/Write) permissions.
+To sync WorkItems with GitHub, the app requires a **GitHub Personal Access Token (PAT)** with repository permissions.
 
+### How to generate your GitHub PAT:
+1. Go to your GitHub account **Settings** -> **Developer settings** -> **Personal access tokens** -> **Tokens (classic)**.
+   *(Or click this direct link: [Generate new token](https://github.com/settings/tokens/new))*
+2. Add a Note (e.g., "WorkItems Desktop App").
+3. Set the expiration to your preference.
+4. Under **Select scopes**, check the box for **`repo`** (Full control of private repositories).
+5. Click **Generate token** and copy the resulting string (it starts with `ghp_...`).
+
+### Adding the token to the app:
 1.  Launch the app.
-2.  Click the **🔑 PAT** button in the top toolbar to enter your GitHub token.
-3.  **Security**: Your token is stored securely using the OS-level credential manager (via the `keyring` library).
+2.  Click the **🔑 PAT** button in the top toolbar.
+3.  Paste your generated token into the dialog and click Save.
+4.  **Security**: Your token is stored securely using the OS-level credential manager (via the `keyring` library).
     *   *Linux Headless Fallback*: If D-Bus / SecretService is unavailable, the app falls back to a securely chmodded `~/.workitems/token.json` file.
 
 ---
